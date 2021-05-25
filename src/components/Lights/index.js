@@ -1,4 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react'
+
+const Lights = () => {
+
+    const [chambre1,setchambre1]=useState('off')
+    function validate(event){
+        if (event.target.value==='off'){
+            setchambre1('on')
+        }
+        else{
+            setchambre1('off')
+        }
+    }
+      
 
 const Lights = () => {
     return (
